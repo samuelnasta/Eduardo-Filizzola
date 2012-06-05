@@ -24,6 +24,7 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic|Crimson+Text:400,700' rel='stylesheet' type='text/css'>
 <title><?php
 	/*
 	 * Print the <title> tag based on what is being viewed.
@@ -51,6 +52,7 @@
 <!--[if lt IE 9]>
 <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
 <![endif]-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <?php
 	/* We add some JavaScript to pages with the comment form
 	 * to support sites with threaded comments (when in use).
