@@ -5,12 +5,9 @@
 	<title><?php bloginfo('name'); ?> <?php wp_title(); ?></title>
 
 	<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />	
-	<meta name="generator" content="WordPress <?php bloginfo('version'); ?>" /> <!-- leave this for stats please -->
 
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
-	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php bloginfo('rss2_url'); ?>" />
-	<link rel="alternate" type="text/xml" title="RSS .92" href="<?php bloginfo('rss_url'); ?>" />
-	<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="<?php bloginfo('atom_url'); ?>" />
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic" rel="stylesheet" type="text/css">
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
 	<?php wp_head(); ?>
@@ -18,5 +15,17 @@
 </head>
 <body>
 
-<?php bloginfo('url'); ?>
-<?php bloginfo('template_directory'); ?>
+<div class="container_12" id="container">
+	<div class="grid_5"><h5 id="logo">Eduardo Filizzola</h5></div>
+
+	<div class="grid_7" id="header">
+		<div class="grid_2 alpha">
+			<ul id="menu">
+				<?php wp_list_pages('depth=1&title_li=&exclude='); ?>
+			</ul>
+		</div>
+		<div class="grid_5 omega" id="slogan"><strong>Eduardo Filizzola</strong> é mineiro, músico, escritor, arranjador e produtor musicalcom mais de 30 anos de carreira.</div>
+		<div class="clear_fix"></div>
+	</div>
+	<div class="grid_7" id="content">
+		<div>
