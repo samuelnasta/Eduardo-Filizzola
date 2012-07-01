@@ -15,8 +15,7 @@
 		</div> <!-- .post -->
 
 		<?php endwhile; endif; ?>
-	
-	
+
 
 <?php get_sidebar(); ?>
 
